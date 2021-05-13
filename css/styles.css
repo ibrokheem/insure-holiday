@@ -1,0 +1,399 @@
+html{
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+/* BODY */
+body{
+  background-color: #fff;
+}
+
+h2{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2C2830;
+}
+p{
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(131, 125, 136, 1);
+}
+
+
+.container{
+  max-width: 1200px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.header-content{
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.site-nav{
+  display: flex;
+  align-items: center;
+}
+
+.main-logo{
+  margin-right: auto;
+  transition: 0.4s ease;
+}
+
+.main-logo:hover{
+  opacity: 0.6;
+}
+
+.nav-list{
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-list li{
+  list-style: none;
+  margin-right: 25px;
+  margin-left: auto;
+}
+
+.nav-list a{
+  text-decoration: none;
+  font-family: "Karla" ,serif;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  color: #837D88;
+  transition: 0.5s ease;
+}
+
+.nav-list a:hover{
+  color: #2C2830;
+}
+
+.btn-view-plans{
+  font-family: "Karla", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #2C2830;
+  padding: 12px 28px;
+  border: 1.5px solid #2C2830;
+  transition: 0.5s ease;
+}
+
+.btn-view-plans:hover{
+  background-color: rgba(44, 40, 48,1);
+  color: white;
+}
+
+/* HERO */
+.hero{
+  background-color: rgba(45, 38, 65, 1);
+}
+
+.hero-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.hr{
+  width: 150px;
+  height: 1px;
+  background-color: #979797;
+  margin-top: 105px;
+  margin-bottom: 32px;
+}
+
+.hero-txt h2{
+  font-family: "DM Serif Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #FFFFFF;
+}
+
+.hero-txt{
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  width: 500px;
+}
+
+.hero-txt p{
+  font-family: "Karla", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  width: 500px;
+  margin-bottom: 24px;
+}
+
+.img-family{
+  width: 540px;
+  height: 650px;
+  background-color: white;
+  background-image: url('../img/family.png');
+}
+
+.btn-view-plans-hero{
+  text-decoration: none;
+  font-family: "Karla" , serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 3px solid;
+  padding: 10px 15px;
+  width: 146px;
+  height: 40px;
+  margin-top: 24px;
+  transition: 0.5s ease;
+}
+
+.btn-view-plans-hero:hover{
+  background-color: white;
+  color:#2D2641
+}
+
+/* WE ARE DIFFERENT */
+.we-are-different-container{
+  margin-top: 305px;
+}
+
+.hr-we-are-different{
+  width: 150px;
+  height: 1px;
+  background-color: #979797;
+  margin-bottom: 60px;
+}
+
+.different-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.different-list li{
+  list-style: none;
+  width: 350px;
+  margin-right: 30px;
+  margin-left: auto;
+  margin-top: 95px;
+}
+
+.different-list h3{
+  font-family: "DM Serif Display" ,serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: #2C2830;
+}
+
+.snappy-process::before{
+  content: "";
+  display: block;
+  width: 86px;
+  height: 86px;
+  background-image: url("../img/thunder.svg");
+}
+
+.affordable-prices::before{
+  content: "";
+  display: block;
+  width: 86px;
+  height: 86px;
+  background-image: url("../img/dollar.svg");
+}
+
+.people-first::before{
+  content: "";
+  display: block;
+  width: 86px;
+  height: 86px;
+  background-image: url("../img/user.svg");
+}
+
+/* HOW WE WORK */
+.how-we-work-container{
+  display: flex;
+  margin-top: 150px;
+  justify-content: space-between;
+}
+
+.how-we-work-content{
+  width: 1110px;
+  display: flex;
+  align-items: center;
+  background-color: #2D2641;
+}
+
+.how-we-work-txt{
+  width: 475px;
+  margin-left: 85px;
+  margin-right: auto;
+}
+
+.how-we-work-txt h2{
+  font-family: "DM Serif Display",serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.777778px;
+  color: #FFFFFF;
+}
+
+.btn-how-we-work{
+  margin-right: 75px;
+  margin-left: auto;
+
+}
+
+.how-we-work-container a{
+  width: 160px;
+  height: 40px;
+  font-family: "Karla",serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1.5px solid white;
+  padding: 10px 15px;
+  transition: 0.5s ease;
+  
+}
+
+.how-we-work-container a:hover{
+  background-color: white;
+  color: #2C2830;
+  margin-right: auto;
+  margin-left: auto       ;
+}
+
+/* FOOTER */
+.site-footer{
+  margin-top: 150px;
+  background-color: #FAFAFA;
+}
+
+.footer-content{
+  padding-top: 64px;
+}
+
+.footer-top{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-top::after{
+  content: "";
+  width: 1110px;
+  height: 1px;
+  background-color: #979797;
+  margin-top: 36px;
+}
+
+.social-networks-list{
+  display: flex;
+  list-style: none;
+}
+
+.social-networks-list li{
+  margin-right: 15px;
+  transition: 0.5s ease;
+}
+
+.social-networks-list li:hover{
+  opacity: 0.5;
+}
+
+.footer-bottom{
+  display: flex;
+  margin-top: 48px;
+  padding-bottom: 64px;
+}
+
+
+.footer-bottom h3{
+  font-family: "Karla", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #837D88;
+  text-transform: uppercase;
+  margin-bottom: 36px;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+}
+
+.service-list{
+  width: 255px;
+  margin-right: 30px;
+}
+
+.footer-bottom li{
+  display: block;
+  list-style: none;
+  margin-top: 16px;
+  transition: 0.2s ease;
+}
+
+.footer-bottom li:hover{
+  opacity: 0.5;
+}
+
+.footer-bottom a{
+  font-family: "Karla", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #2D2641;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
